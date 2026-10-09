@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlamWithFahve | Luxury Hair</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        GlamWith<span>Fahve</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" onclick="openCart()">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            WELCOME TO GLAMWITHFAHVE
+        </p>
+
+        <h1>
+            Luxury Hair.<br>
+            Effortless Beauty.
+        </h1>
+
+        <p>
+            Discover beautiful premium wigs designed
+            to make you look and feel amazing.
+        </p>
+
+        <a href="#shop" class="hero-button">
+            SHOP NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
+<section class="shop" id="shop">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>
+            Shop Our Luxury Wigs
+        </h2>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a wig..."
+            onkeyup="searchProducts()"
+        >
+
+    </div>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <div class="products" id="products">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product"
+             data-name="Body Wave Wig"
+             data-price="185000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Body Wave Wig.jpeg"
+                alt="Body Wave Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Body Wave Wig</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦185,000</h4>
+
+                <button
+                    onclick="addToCart(this)"
+                    class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product"
+             data-name="Bone Straight Wig"
+             data-price="210000"
+             data-size="18 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Bone Straight Wig.jpeg"
+                alt="Bone Straight Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Bone Straight Wig</h3>
+
+                <p>18 inches</p>
+
+                <h4>₦210,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product"
+             data-name="Deep Wave Wig"
+             data-price="235000"
+             data-size="22 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Deep Wave Wig.jpeg"
+                alt="Deep Wave Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Deep Wave Wig</h3>
+
+                <p>22 inches</p>
+
+                <h4>₦235,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product"
+             data-name="Water Wave Wig"
+             data-price="260000"
+             data-size="24 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Water Wave Wig.webp"
+                alt="Water Wave Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Water Wave Wig</h3>
+
+                <p>24 inches</p>
+
+                <h4>₦260,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product"
+             data-name="Body Wave Frontal"
+             data-price="195000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Body Wave Frontal.jpeg"
+                alt="Body Wave Frontal"
+            >
+
+            <div class="product-info">
+
+                <h3>Body Wave Frontal</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦195,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product"
+             data-name="Curly Bob Wig"
+             data-price="150000"
+             data-size="12 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Curly Bob Wig.jpeg"
+                alt="Curly Bob Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Curly Bob Wig</h3>
+
+                <p>12 inches</p>
+
+                <h4>₦150,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 7 -->
+
+        <div class="product"
+             data-name="Straight Bob Wig"
+             data-price="160000"
+             data-size="14 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Straight Bob Wig.jpeg"
+                alt="Straight Bob Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Straight Bob Wig</h3>
+
+                <p>14 inches</p>
+
+                <h4>₦160,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 8 -->
+
+        <div class="product"
+             data-name="Pixie Cut Wig"
+             data-price="135000"
+             data-size="10 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Pixie Cut Wig.jpeg"
+                alt="Pixie Cut Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Pixie Cut Wig</h3>
+
+                <p>10 inches</p>
+
+                <h4>₦135,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 9 -->
+
+        <div class="product"
+             data-name="Loose Wave Wig"
+             data-price="225000"
+             data-size="22 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Loose Wave Wig.jpeg"
+                alt="Loose Wave Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Loose Wave Wig</h3>
+
+                <p>22 inches</p>
+
+                <h4>₦225,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 10 -->
+
+        <div class="product"
+             data-name="Kinky Curly Wig"
+             data-price="205000"
+             data-size="18 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Kinky Curly Wig.jpeg"
+                alt="Kinky Curly Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Kinky Curly Wig</h3>
+
+                <p>18 inches</p>
+
+                <h4>₦205,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 11 -->
+
+        <div class="product"
+             data-name="Deep Curly Wig"
+             data-price="220000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Deep Curly Wig.jpeg"
+                alt="Deep Curly Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Deep Curly Wig</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦220,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 12 -->
+
+        <div class="product"
+             data-name="Glueless Wig"
+             data-price="230000"
+             data-size="18 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Glueless Wig.jpeg"
+                alt="Glueless Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Glueless Wig</h3>
+
+                <p>18 inches</p>
+
+                <h4>₦230,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 13 -->
+
+        <div class="product"
+             data-name="HD Lace Wig"
+             data-price="280000"
+             data-size="24 inches">
+
+            <img
+                src="./PRODUCT IMAGE/HD Lace Wig.jpeg"
+                alt="HD Lace Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>HD Lace Wig</h3>
+
+                <p>24 inches</p>
+
+                <h4>₦280,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 14 -->
+
+        <div class="product"
+             data-name="Lace Front Wig"
+             data-price="215000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Lace Front Wig.jpeg"
+                alt="Lace Front Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Lace Front Wig</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦215,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 15 -->
+
+        <div class="product"
+             data-name="Frontal Body Wave"
+             data-price="270000"
+             data-size="24 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Frontal Body Wave.jpeg"
+                alt="Frontal Body Wave"
+            >
+
+            <div class="product-info">
+
+                <h3>Frontal Body Wave</h3>
+
+                <p>24 inches</p>
+
+                <h4>₦270,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 16 -->
+
+        <div class="product"
+             data-name="Brazilian Straight"
+             data-price="245000"
+             data-size="22 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Brazilian Straight.jpeg"
+                alt="Brazilian Straight"
+            >
+
+            <div class="product-info">
+
+                <h3>Brazilian Straight</h3>
+
+                <p>22 inches</p>
+
+                <h4>₦245,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 17 -->
+
+        <div class="product"
+             data-name="Peruvian Wave"
+             data-price="240000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Peruvian Wave.jpeg"
+                alt="Peruvian Wave"
+            >
+
+            <div class="product-info">
+
+                <h3>Peruvian Wave</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦240,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 18 -->
+
+        <div class="product"
+             data-name="Highlight Wig"
+             data-price="250000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Highlight Wig.jpeg"
+                alt="Highlight Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Highlight Wig</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦250,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 19 -->
+
+        <div class="product"
+             data-name="Burgundy Body Wave"
+             data-price="255000"
+             data-size="20 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Burgundy Body Wave.jpeg"
+                alt="Burgundy Body Wave"
+            >
+
+            <div class="product-info">
+
+                <h3>Burgundy Body Wave</h3>
+
+                <p>20 inches</p>
+
+                <h4>₦255,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 20 -->
+
+        <div class="product"
+             data-name="Luxury 30 Inch Wig"
+             data-price="350000"
+             data-size="30 inches">
+
+            <img
+                src="./PRODUCT IMAGE/Luxury 30 Inch Wig.jpeg"
+                alt="Luxury 30 Inch Wig"
+            >
+
+            <div class="product-info">
+
+                <h3>Luxury 30 Inch Wig</h3>
+
+                <p>30 inches</p>
+
+                <h4>₦350,000</h4>
+
+                <button onclick="addToCart(this)"
+                        class="add-button">
+
+                    ADD TO CART
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <p class="gold-text">
+            ABOUT GLAMWITHFAHVE
+        </p>
+
+        <h2>
+            Beauty Begins With Great Hair
+        </h2>
+
+        <p>
+            GlamWithFahve is dedicated to providing beautiful,
+            quality hair and wigs for women who love to look
+            elegant, confident and stylish.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <p class="gold-text">
+        CONTACT US
+    </p>
+
+    <h2>
+        GlamWithFahve
+    </h2>
+
+    <p>
+        Email:
+        elochukwufavour975@gmail.com
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>
+        GlamWithFahve
+    </h3>
+
+    <p>
+        Luxury Hair • Beautiful You
+    </p>
+
+    <p>
+        © 2026 GlamWithFahve. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= CART POPUP ================= -->
+
+<div class="overlay" id="cartOverlay">
+
+    <div class="cart-box">
+
+        <button
+            class="close-button"
+            onclick="closeCart()">
+
+            ×
+
+        </button>
+
+        <h2>
+            Your Shopping Cart
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            Total:
+            <strong id="cartTotal">
+                ₦0
+            </strong>
+
+        </div>
+
+        <button
+            class="checkout-button"
+            onclick="openCheckout()">
+
+            PROCEED TO CHECKOUT
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CHECKOUT POPUP ================= -->
+
+<div class="overlay" id="checkoutOverlay">
+
+    <div class="checkout-box">
+
+        <button
+            class="close-button"
+            onclick="closeCheckout()">
+
+            ×
+
+        </button>
+
+        <h2>
+            Checkout
+        </h2>
+
+        <form id="checkoutForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="customerEmail"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <textarea
+                id="deliveryAddress"
+                placeholder="Delivery Address"
+                required
+            ></textarea>
+
+            <input
+                type="text"
+                id="city"
+                placeholder="City"
+                required
+            >
+
+            <input
+                type="text"
+                id="state"
+                placeholder="State"
+                required
+            >
+
+            <textarea
+                id="instructions"
+                placeholder="Additional instructions"
+            ></textarea>
+
+
+            <!-- PAYMENT -->
+
+            <div class="payment">
+
+                <h3>
+                    Payment Information
+                </h3>
+
+                <p>
+                    <strong>Payment Method:</strong>
+                    Opay
+                </p>
+
+                <p>
+                    <strong>Account Number:</strong>
+                    8130812904
+                </p>
+
+                <p>
+                    <strong>Business:</strong>
+                    GlamWithFahve
+                </p>
+
+                <p class="payment-note">
+
+                    Please make your payment and keep
+                    your payment receipt. Your order will
+                    be confirmed after payment verification.
+
+                </p>
+
+            </div>
+
+
+            <label class="confirm-payment">
+
+                <input
+                    type="checkbox"
+                    required
+                >
+
+                I understand the payment instructions.
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="place-order">
+
+                PLACE ORDER
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
